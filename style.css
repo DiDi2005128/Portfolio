@@ -26,6 +26,7 @@ header {
     z-index: 1000;
 }
 header a{
+    border-radius: 980px;
     transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s;
 }
 header a:hover{
