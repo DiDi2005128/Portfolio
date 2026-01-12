@@ -25,6 +25,13 @@ header {
     left: 0;
     z-index: 1000;
 }
+header a{
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s;
+}
+header a:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 25), 0 0 20px rgba(37, 99, 235, 0.6);
+}
 .header-container{
     gap: 20px;
     padding: 16px 32px;
@@ -36,8 +43,11 @@ header {
     justify-content: space-between;
 }        
 .hero {
+    /*Couleur de fond*/
     background: linear-gradient(135deg, #020617,#020617,#0F172A);
+    /* Couleur de fond*/
     color: #38BDF8;
+    /*Alignement du texte au centre*/
     text-align: center;
     display: flex;
     min-height: 100vh;
@@ -48,7 +58,6 @@ header {
 }
 
 .hero button{
-    
     background: #060a1f;
     color: #38BDF8;
     padding: 14px 32px;
@@ -86,7 +95,8 @@ nav a{
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
-    transition: opacity 0.3s;
+    
+    
 }
 
 .logo a{
@@ -108,6 +118,8 @@ nav ul{
     padding: 0;
     margin: 0;
 }
+
+
 .apropos{
     background-color: #0F172A;
     color: #94A3B8;
@@ -119,6 +131,7 @@ nav ul{
     gap: 60px;
 }
 .apropos h2{
+    color: #38BDF8;
     margin-bottom: 24px;
     letter-spacing: -1px;
     line-height: 1.1;
@@ -204,6 +217,9 @@ nav ul{
     margin-bottom: 60px;
     line-height: 1.1;
 }
+.projet p{
+     color: #E5E7EB;
+}
 .projet-grid{
     
     display: grid;
@@ -214,6 +230,9 @@ nav ul{
     color: #38BDF8;
     margin-bottom: 20px;
     opacity: 0.8;
+}
+.projet-card a{
+    text-decoration: none;
 }
 .projet-card{
     display: block;
@@ -284,12 +303,11 @@ nav ul{
     line-height: 1.1;
 }
 .vsa-grid{
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
     gap: 60px;
     line-height: 1.6;
-    
-    
 }
 
 .vsa-block h3{
@@ -312,11 +330,8 @@ nav ul{
     border: 1px solid rgba(11, 4, 4, 0.08);
     
 }
-@media (max-width: 900px){
-    .vsa-grid{
-        grid-template-columns:repeat(3, 1fr);
-    }
-}
+
+
 .contact {
     background: linear-gradient(135deg, #020617, #0F172A, #1E293B);
     text-align: center;
@@ -328,7 +343,7 @@ nav ul{
     padding: 120px 0;
 }
 .contact h2{
-    color: #F1F5F9;
+    color: #38BDF8;
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 24px;
